@@ -1,16 +1,71 @@
+
 <!DOCTYPE html>
-<html>
-
+<html lang="lv">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bļodas ar stāstu</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
-  Hello world
-  <script src="script.js"></script>
-</body>
+    <header>
+        <nav>
+            <button class="nav-button">Kontakt informācija</button>
+            <h1>Bļodas ar stāstu</h1>
+            <a href="#" class="auth-link">autorizācija lapa</a>
+        </nav>
+        <div class="main-nav">
+            <a href="#products">Produkta attēli</a>
+            <a href="#our-products">Mūsu Produkti</a>
+            <a href="#why-us">Kāpēc Izvēlēties Mūs?</a>
+        </div>
+    </header>
 
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h2>Par Mums – Roku Darba Trauki ar Dvēseli</h2>
+                <p>Mēs ticam, ka katram mājās priekšmetam jābūt ne tikai skaistam, bet arī ar stāstu. Tāpēc mēs radām unikālus, roku darbus veidotus bļodas, kas piešķir īpašu noskaņu jūsu virtuvei un mājām. Mūsu produkti ir izgatavoti no dabīgiem, ilgtspējīgiem materiāliem, nodrošinot kvalitāti, kas kalpos gadiem ilgi.</p>
+                <img src="assets/logo.png" alt="Bļodas ar stāstu logo" class="hero-logo">
+            </div>
+        </section>
+
+        <section id="auth" class="auth-form">
+            <form>
+                <input type="text" placeholder="Lietotājvārds" required>
+                <input type="password" placeholder="Parole" required>
+                <button type="submit">Pieivienoties</button>
+            </form>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Sazinities ar Mums</h2>
+            <div class="contact-info">
+                <p>📍 Mūsu darbnīca:<br>[Rakstiet adresi, ja ir fiziska vieta, piemēram, salons vai veikals]</p>
+                <p>📧 E-pasts:<br>[jusu.epasts@example.com] (atbildēm 24 stundu laikā)</p>
+                <p>📞 Tālrunis/WhatsApp:<br>+371 XXX XXXX XX (Darba dienās 10:00 – 18:00)</p>
+                <p>🌐 Sociālie tīkli:<br>
+                📸 Instagram: [@jūsuprofils]<br>
+                👥 Facebook: [@jūsuprofils]</p>
+            </div>
+        </section>
+
+        <section id="products" class="products-grid">
+            <!-- Product images will be added here -->
+        </section>
+
+        <section id="contact-form" class="contact-form">
+            <h3>Sūdzību forma</h3>
+            <form>
+                <input type="text" placeholder="Vārds" required>
+                <input type="text" placeholder="Uzvārds" required>
+                <input type="email" placeholder="Epasts" required>
+                <textarea placeholder="Sūdzība" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
 </html>
