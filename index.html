@@ -1,343 +1,53 @@
 <!DOCTYPE html>
-<html lang="lv">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bļodas ar stāstu</title>
+    <title>Bļodu Lapa - Sākums</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial;
             margin: 0;
-            padding: 20px;
-            background-color: white;
-            color: #333;
-            line-height: 1.4;
+            padding: 0;
         }
-        .page {
-            display: none;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .page.active {
-            display: block;
-        }
-        .nav-buttons {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 5px;
-            justify-content: center;
-            margin-bottom: 20px;
-            padding: 10px;
-            background-color: #f5f5f5;
-            border-radius: 5px;
-        }
-        .nav-btn {
-            padding: 5px 10px;
-            background-color: #4CAF50;
+        header {
+            background: #8d6e63;
             color: white;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-            font-size: 14px;
+            padding: 20px;
+            text-align: center;
         }
-        .nav-btn:hover {
-            background-color: #45a049;
+        nav {
+            background: #a1887f;
+            padding: 10px;
+            text-align: center;
         }
-        h1 {
-            font-size: 24px;
-            color: #333;
-            margin-bottom: 15px;
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
         }
-        h2 {
-            font-size: 20px;
-            color: #333;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-        h3 {
-            font-size: 16px;
-            color: #333;
-            margin-top: 15px;
-            margin-bottom: 8px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 5px;
-        }
-        .contact-info {
-            background-color: #f9f9f9;
-            padding: 15px;
-            border-radius: 5px;
-            margin-top: 15px;
-            border: 1px solid #ddd;
-        }
-        .benefit-item {
-            margin-bottom: 10px;
-            position: relative;
-            padding-left: 20px;
-        }
-        .benefit-item:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-        }
-        .price {
-            font-weight: bold;
-        }
-        .product-section {
-            margin-bottom: 20px;
-        }
-        .checkbox {
-            margin: 10px 0;
-        }
-        .social-media {
-            margin-top: 10px;
-        }
-        .social-media-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 5px;
-        }
-        .social-icon {
-            margin-right: 5px;
+        .content {
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div class="nav-buttons">
-        <button class="nav-btn" onclick="showPage('page1')">1. Galvenā lapa</button>
-        <button class="nav-btn" onclick="showPage('page2')">2. Lietotāja dati</button>
-        <button class="nav-btn" onclick="showPage('page3')">3. Produkti</button>
-        <button class="nav-btn" onclick="showPage('page4')">4. Produktu saraksts</button>
-        <button class="nav-btn" onclick="showPage('page5')">5. Kāpēc izvēlēties mūs?</button>
-        <button class="nav-btn" onclick="showPage('page6')">6. Produktu kategorijas</button>
-        <button class="nav-btn" onclick="showPage('page7')">7. Kontaktinformācija</button>
+    <header>
+        <h1>Bļodu Lapa</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Sākums</a>
+        <a href="galerija.html">Galerija</a>
+    </nav>
+
+    <div class="content">
+        <h2>Sveicināti bļodu pasaulē!</h2>
+        <p>Šeit varat apskatīt mūsu bļodu kolekciju.</p>
+
+        <h3>Bļodu izgatavošanas process:</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qfwHpUled-Y" frameborder="0" allowfullscreen></iframe>
     </div>
-
-    <!-- Page 1 (1.png) -->
-    <div id="page1" class="page active">
-        <h1>Biodas ar stästu</h1>
-
-        <p><strong>Kontakt informācija</strong></p>
-
-        <h2>Produkta attēli</h2>
-        <p>Mūsu Produkti</p>
-
-        <h2>Par Muns – Roku Darba Trauki ar Dvēseli</h2>
-        <p>Mēs ticam, ka katram mājas priekšmetam jābūt ne tikai skaistam, bet arī ar stāstu. Tāpēc mēs radām unikālus, roku darbus veidotus biodas, kas piešķir īpašu noskapu jūsu virtuvei un mājām. Mūsu produkti ir izgatavoti no dabīgiem, līgtspējīgiem materiāliem, nodrošinot kvalitāti, kas kalpos gadiem ilgi.</p>
-
-        <p><strong>autorizācija lapa</strong></p>
-
-        <h2>Kāpēc Izvēlēties Mūs?</h2>
-    </div>
-
-    <!-- Page 2 (2.png) -->
-    <div id="page2" class="page">
-        <h1>Bļodas ar stāstu</h1>
-
-        <h2>Produkta attēli</h2>
-        <ul>
-            <li><strong>Kontakt informācija</strong></li>
-            <ul>
-                <li>Musu Produkti</li>
-                <li>Kāpēc Izvēlēties Mūs?</li>
-            </ul>
-        </ul>
-
-        <h3>Lietotāvāds</h3>
-        <ul>
-            <li>Value</li>
-            <li>Pamie</li>
-            <li>Value</li>
-            <li>Performētas</li>
-        </ul>
-    </div>
-
-    <!-- Page 3 (3.png) -->
-    <div id="page3" class="page">
-        <h1>Biodas ar stästu</h1>
-
-        <p><strong>Kontakt informacje</strong></p>
-
-        <h2>Produkta attēli</h2>
-        <p>Mūsu Produkti<br>Kāpēc Izvēlēties Mūs?</p>
-
-        <h3>Mūsu Produkti un Cenas</h3>
-
-        <div class="product-section">
-            <h4>Koka biodas</h4>
-            <p>Dabiski skaistas, unikāli izgatavotas no ilgtspējīgi iegūta koka. Ideāli piemērotas augliem, salātiem un dekorēšanai.</p>
-            <ul>
-                <li>Mazā (15 cm diametrā): <span class="price">25 €</span></li>
-                <li>Vidējā (20 cm diametrā): <span class="price">40 €</span></li>
-                <li>Lielā (30 cm diametrā): <span class="price">60 €</span></li>
-            </ul>
-        </div>
-
-        <div class="product-section">
-            <h4>Keramikas biodas</h4>
-            <p>Roku darbs no augstas kvalitātes māla, ar individuāli veidotām glazūrām un rakstiem. Katrs dizains ir unikāls.</p>
-            <ul>
-                <li>Mazā (15 cm diametrā): <span class="price">20 €</span></li>
-                <li>Vidējā (20 cm diametrā): <span class="price">35 €</span></li>
-                <li>Lielā (30 cm diametrā): <span class="price">55 €</span></li>
-            </ul>
-        </div>
-
-        <div class="product-section">
-            <h4>Epoksida un pārstrādāta materiāla biodas</h4>
-            <p>Moderns dizains apvienojumā ar ekoloģisku domāšanu – izgatavotas no pārstrādāta koka un epoksida sveķiem.</p>
-            <ul>
-                <li>Vidējā (20 cm diametrā): <span class="price">50 €</span></li>
-                <li>Lielā (30 cm diametrā): <span class="price">75 €</span></li>
-            </ul>
-        </div>
-
-        <div class="product-section">
-            <h4>Personalizētas biodas</h4>
-            <p>Vēlaties gravējumu ar vārdu, logo vai īpašu dizainu? Pasūtiet unikālu biodu, kas būs lieliska dāvana vai īpašs elements jūsu uzņēmumam!</p>
-            <ul>
-                <li>Personalizēta gravēšana – <span class="price">+10 €</span> papildus jebkurai biodai</li>
-            </ul>
-        </div>
-
-        <h4>Piegāde un Pasūtījumi</h4>
-        <ul>
-            <li>Bezmaksas piegāde Latvijā pasūtījumiem virs 80 €!</li>
-            <li>Standarta piegāde: 5 € (1–3 darba dienas)</li>
-            <li>Starptautiskā piegāde – sākot no 10 €</li>
-            <li>Pasūtīt iespējams mūsu mājaslapā vai rakstot mums e-pastā: [Jūsu e-pasts]</li>
-        </ul>
-    </div>
-
-    <!-- Page 4 (4.png) -->
-    <div id="page4" class="page">
-        <h1>Biodas ar stāstu</h1>
-
-        <h2>Modukta attēli</h2>
-        <ul>
-            <li><strong>Kontakt informācija</strong></li>
-            <li><strong>autorizācija lapa</strong></li>
-        </ul>
-
-        <h3>Mūsu Produkti</h3>
-        <ul>
-            <li><strong>Kāpēc izvēlēties Mūs?</strong></li>
-        </ul>
-
-        <h4>Vārda</h4>
-        <ul>
-            <li>Value</li>
-            <li>Uzvārda</li>
-            <li>Value</li>
-            <li>Epasts</li>
-            <li>Value</li>
-            <li>Stādzība</li>
-            <li>Value</li>
-        </ul>
-    </div>
-
-    <!-- Page 5 (5.png) -->
-    <div id="page5" class="page">
-        <h2>Käpēc izvēlēties mūs</h2>
-
-        <p><strong>Kontakt informācija</strong></p>
-
-        <h1>Biodas ar stāstu</h1>
-
-        <h2>Produkta attēli Mūsu Produkti Kāpēc izvēlēties Mūs?</h2>
-
-        <h2>Kāpēc izvēlēties Mūs?</h2>
-        <p>Mūsu mērķis ir ne tikai radīt skaistas un kvalitatīvas biodas, bet arī nodrošināt izcilu pieredzi katram klientam. Lūk, kāpēc mūsu klienti izvēlas mūs:</p>
-
-        <div class="benefit-item">Roku darbs ar milestību – Katrs izstrādājums ir unikāls, radīts ar rūpību un uzmanību pret detajām. Nav divu vienādu biodu!</div>
-        <div class="benefit-item">Ilgtspēļīgi materiāli – Mēs izmantojam tikai dabai draudzīgus un ilgtspēļīgus materiālus, piemēram, vietējo koku un ekoloģiskas glazūras, lai samazinātu ietekmi uz vidi.</div>
-        <div class="benefit-item">Ekskluzīvs dizains – Mūsu biodas ir ne tikai praktiskas, bet arī mākslas darbi. Tās lieliski iederas jebkurā interjerā un piešķir unikālu noskapu īūsu mājoklim.</div>
-        <div class="benefit-item">Personalizācija un unikālas dāvanas – Vēlaties iegravētu vārdu, uzņēmuma logo vai īpašu rakstu? Mēs piedāvājam personalizētus risinājumus, lai īūsu bļoda būtu vēl īpašāka.</div>
-        <div class="benefit-item">Atbalstes vietējam amatniekiem – legādājoties mūsu produktus, jūs atbalstāt vietējos amatniekus un veicināt tradicionālu roku darba attīstību Latviši.</div>
-        <div class="benefit-item">Ātra un droša piegāde – Mēs rūpējamies, lai īūsu pasūtījums tiktu piegādāts ātri un droši, lai jūs varētu izbaudīt mūsu produktus pēc iespējas ātrāk.</div>
-        <div class="benefit-item">Lieliskas atsauksmes no klientiem – Mūsu klienti novērtē kvalitāti, dizainu un personīgo pieeļu katram pasūtījumam. Mēs darām visu iespējamo, lai jūs būtu apmierināti ar savu pirkumu!</div>
-
-        <p>Pārliechieties pašti Pasūtiet savu īpašo bļodu jau šodien un pievienojieties mūsu apmierināto klientu lokami 😊</p>
-    </div>
-
-    <!-- Page 6 (6.png) -->
-    <div id="page6" class="page">
-        <h1>Produkta attēli</h1>
-
-        <h2>Produktantātā</h2>
-        <ul>
-            <li><strong>Bļodas ar stāstu</strong></li>
-            <ul>
-                <li>Mizur Produkti</li>
-            </ul>
-            <li><strong>autorizācija lapa</strong></li>
-            <ul>
-                <li>Kāpēc Izvēlēties Mizi?</li>
-            </ul>
-        </ul>
-    </div>
-
-    <!-- Page 7 (7.png) -->
-    <div id="page7" class="page">
-        <h2>Kontakt informācija</h2>
-
-        <p><strong>Bļodas ar stāstu</strong></p>
-        <p><strong>autorizācija lapa</strong></p>
-
-        <p><strong>Produkta attēli</strong></p>
-        <p>Mūsu Produkti</p>
-        <p>Kāpēc Izvēlēties Mūs?</p>
-
-        <div class="contact-info">
-            <h3>📌 Sazinieties ar Mums</h3>
-            <p>Vai jums ir jautājumi par mūsu produktiem? Vēlaties personalizētu pasūtījumu vai sadarbības piedāvājumu? Mēs esam ēeit, lai palīdzētui</p>
-            <p>Sazinieties ar mums, un mēs ar prieku atbildēsim uz visiem jūsu jautājumiem.</p>
-
-            <h3>🟩 Mūsu darbība:</h3>
-            <p>[Rakstiet adresi, ja ir fiziska vieta, piemēram, salons vai veikais]</p>
-
-            <h3>🟪 E-pasts:</h3>
-            <p>[Jūsu.epasts@example.com] (atbildam 24 stundu laikā)</p>
-
-            <h3>📌 Tālrunis/WhatsApp:</h3>
-            <p>+371 XXX XXXX XX (Darba dienās 10:00 – 18:00)</p>
-
-            <h3>📌 Sociālie tīkl:</h3>
-            <div class="social-media">
-                <div class="social-media-item">
-                    <span class="social-icon">■</span> Instagram: [@jusuprofils]
-                </div>
-                <div class="social-media-item">
-                    <span class="social-icon">■</span> Facebook: [@jusuprofils]
-                </div>
-            </div>
-
-            <h3>📌 Vai vēlaties saņemt mūsu jaunumus un īpašos piedāvājumus? Pievienojieties mūsu e-pasta listei</h3>
-            <div class="checkbox">
-                <input type="checkbox" id="newsletter">
-                <label for="newsletter">Piekrītu saņemt jaunumus</label>
-            </div>
-
-            <p>☐ Ja jums ir kādas idejas, kā varam uztabot mūsu produktus vai pakalpojumu, mēs vienmēr novērtējam jūsu atsauksmes! Rakstiet mums – mēs esam atvērti jūsu ieteikumiem un sadarbības iespējām.</p>
-            <p>Mēs priedaimies par jūsu ziņu 😊</p>
-
-            <h3>Sūdzību forma</h3>
-        </div>
-    </div>
-
-    <script>
-        function showPage(pageId) {
-            // Hide all pages
-            document.querySelectorAll('.page').forEach(page => {
-                page.classList.remove('active');
-            });
-
-            // Show selected page
-            document.getElementById(pageId).classList.add('active');
-        }
-    </script>
 </body>
 </html>
+
